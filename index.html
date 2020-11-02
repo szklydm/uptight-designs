@@ -4,45 +4,209 @@
   <meta charset="utf-8">
   <title>Uptight Designs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&family=Open+Sans&family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-  <header class="cover">
+  <span class="logo-bg"></span>
+  <header>
     
-     <div class="cover-photo-container">
-      
-      <img src="assets/uptight%20tshirt%20yellow%2003.png" alt="Uptight Designs T-Shirt">
-      
-    </div>
+    <!-- <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="auto" height="40" viewBox="0 0 61.601402 61.600876">
+      <g transform="translate(-618.26684,-265.04527)">
+        <path class="d-shape" d="m 631.4961,265.04527 v 10.58313 h 12.64004 v 15.28563 10.58315 h 13.22925 4.27663 c 10.00578,0 18.22622,-8.21992 18.22622,-18.22569 0,-10.00577 -8.22044,-18.22622 -18.22622,-18.22622 z"/>
+        <path class="u-shape" d="m 618.26684,265.04527 v 43.37465 c 0,10.00578 8.22072,18.22622 18.22648,18.22622 10.00578,0 18.22622,-8.22044 18.22622,-18.22622 v -4.27689 h -10.5834 -2.64586 v -25.86877 h -12.64003 v -13.22899 z"/>
+      </g>
+    </svg> -->
+
+    <!-- <img class="logo header-icon" src="assets/uptight logo mid-yellow.svg" alt="Uptight Designs"> -->
     
-    <h1 class="cover-tagline">THE HE<span>ART</span> ON YOUR SLEEVE</h1>
-    
-    <div class="cover-logo-container">
+    <!-- NAV ICONS -->
+    <!-- <div class="icons">
+      <a href="#portfolio">
+        <svg class="icon-portfolio header-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 23.8 26.5"><style>.a{fill:#e3924cff;paint-order:stroke fill markers;stroke-linejoin:round;stroke-width:2;}</style><g transform="translate(-1354.8863 -185.23709)matrix(0.81592849 0 0 0.81592849 959.51889 -294.69295)"><path d="m492 588.2v1.1l1.1 0.4 13.1 5 4.8 1.8v5.8l2.8 1v-6.8l-4.4-1.6-13.1-5zm15.4 15.9v2.1l-0.7-0.3v12.2l2.8 1v-14.3z" class="a"/><path d="m488.3 588.9v1.1l1.1 0.4 13.1 5 4.8 1.8v5.8l2.8 1v-6.8l-4.4-1.6-13.1-5zm14.7 15.6v14.3l2.8 1v-14.3z" class="a"/><path d="m484.6 589.7v6.8l4.4 1.6v17.5l13.1 5v-17.5l4.4 1.6v-6.8l-4.4-1.6-13.1-5z" class="a"/></g></svg>
+      </a>
+      <a href="#on-demand">
+        <img class="icon-on-demand header-icon" src="/assets/uptight icons ondemand.svg" alt="pencil">
+      </a>
+      <a href="#contact">
+        <svg class="icon-contact header-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 23.8 26.5"><style>.a{fill:#e3924cff;paint-order:stroke fill markers;stroke-linejoin:round;stroke-width:2;}</style><g transform="translate(-1354.8863 -185.23709)matrix(0.81592849 0 0 0.81592849 959.51889 -294.69295)"><path d="m492 588.2v1.1l1.1 0.4 13.1 5 4.8 1.8v5.8l2.8 1v-6.8l-4.4-1.6-13.1-5zm15.4 15.9v2.1l-0.7-0.3v12.2l2.8 1v-14.3z" class="a"/><path d="m488.3 588.9v1.1l1.1 0.4 13.1 5 4.8 1.8v5.8l2.8 1v-6.8l-4.4-1.6-13.1-5zm14.7 15.6v14.3l2.8 1v-14.3z" class="a"/><path d="m484.6 589.7v6.8l4.4 1.6v17.5l13.1 5v-17.5l4.4 1.6v-6.8l-4.4-1.6-13.1-5z" class="a"/></g></svg>
+      </a>
+      <a href="#about">
+        <svg class="icon-about header-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 23.8 26.5"><style>.a{fill:#e3924cff;paint-order:stroke fill markers;stroke-linejoin:round;stroke-width:2;}</style><g transform="translate(-1354.8863 -185.23709)matrix(0.81592849 0 0 0.81592849 959.51889 -294.69295)"><path d="m492 588.2v1.1l1.1 0.4 13.1 5 4.8 1.8v5.8l2.8 1v-6.8l-4.4-1.6-13.1-5zm15.4 15.9v2.1l-0.7-0.3v12.2l2.8 1v-14.3z" class="a"/><path d="m488.3 588.9v1.1l1.1 0.4 13.1 5 4.8 1.8v5.8l2.8 1v-6.8l-4.4-1.6-13.1-5zm14.7 15.6v14.3l2.8 1v-14.3z" class="a"/><path d="m484.6 589.7v6.8l4.4 1.6v17.5l13.1 5v-17.5l4.4 1.6v-6.8l-4.4-1.6-13.1-5z" class="a"/></g></svg>
+      </a>  
+    </div> -->
+    <!-- TRADITIONAL HAMBURGER NAV -->
+
+    <!-- <input type="checkbox" id="nav-toggle" class="nav-toggle">
       
-      <img src="assets/uptight-logo-yellow.png" alt="Uptight Designs Logo">
-      
-    </div>
-    
     <nav>
       
-      <ul class="nav-bar">
-        <li class="nav-bar-item"><a class="active" href="#">Portfolio</a></li>
-        <li class="nav-bar-item"><a href="#">About</a></li>
-        <li class="nav-bar-item"><a href="#">Contact</a></li>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#">On Demand</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
       </ul>
       
     </nav>
-        
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label> -->
   </header>
   
   <main>
+    
+    <section class="hero">
+      <div class="hero-content">
+        <img src="assets/halftshirt hanging man no shadow.png" alt="Hanging man's t-shirt" class="hero-left">
+        <div class="hero-middle">
+          <h1 class="hero-tagline">Uptight Designs</h1>
+          <svg class="tagline-logo" xmlns="http://www.w3.org/2000/svg" width="auto" height="80" viewBox="0 0 61.601402 61.600876">
+            <g transform="translate(-618.26684,-265.04527)">
+              <path class="d-shape" d="m 631.4961,265.04527 v 10.58313 h 12.64004 v 15.28563 10.58315 h 13.22925 4.27663 c 10.00578,0 18.22622,-8.21992 18.22622,-18.22569 0,-10.00577 -8.22044,-18.22622 -18.22622,-18.22622 z"/>
+              <path class="u-shape" d="m 618.26684,265.04527 v 43.37465 c 0,10.00578 8.22072,18.22622 18.22648,18.22622 10.00578,0 18.22622,-8.22044 18.22622,-18.22622 v -4.27689 h -10.5834 -2.64586 v -25.86877 h -12.64003 v -13.22899 z"/>
+            </g>
+          </svg>
+        </div>
+        <img src="assets/halftshirt hanging woman no shadow.png" alt="Hanging woman's t-shirt" class="hero-right">
+      </div>  
+      <div class="hero-buttons">
+        <button class="cta-button cta-primary">See Portfolio</button>
+        <button class="cta-button cta-secondary">On Demand</button>
+      </div>
+    </section>
+    
+    <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="auto" height="40" viewBox="0 0 61.601402 61.600876">
+      <g transform="translate(-618.26684,-265.04527)">
+        <path class="d-shape" d="m 631.4961,265.04527 v 10.58313 h 12.64004 v 15.28563 10.58315 h 13.22925 4.27663 c 10.00578,0 18.22622,-8.21992 18.22622,-18.22569 0,-10.00577 -8.22044,-18.22622 -18.22622,-18.22622 z"/>
+        <path class="u-shape" d="m 618.26684,265.04527 v 43.37465 c 0,10.00578 8.22072,18.22622 18.22648,18.22622 10.00578,0 18.22622,-8.22044 18.22622,-18.22622 v -4.27689 h -10.5834 -2.64586 v -25.86877 h -12.64003 v -13.22899 z"/>
+      </g>
+    </svg>
+
+    <footer class="footer">
+      <div class="footer-item footer-portfolio">
+        <a href="#portfolio">
+          <svg class="nav-icon nav-portfolio" xmlns="http://www.w3.org/2000/svg" width="auto" height="26" viewBox="0 0 23.8 26.5">
+            <g transform="translate(-1354.8863 -185.23709)matrix(0.81592849 0 0 0.81592849 959.51889 -294.69295)"><path d="m492 588.2v1.1l1.1 0.4 13.1 5 4.8 1.8v5.8l2.8 1v-6.8l-4.4-1.6-13.1-5zm15.4 15.9v2.1l-0.7-0.3v12.2l2.8 1v-14.3z" class="a"/><path d="m488.3 588.9v1.1l1.1 0.4 13.1 5 4.8 1.8v5.8l2.8 1v-6.8l-4.4-1.6-13.1-5zm14.7 15.6v14.3l2.8 1v-14.3z" class="a"/><path d="m484.6 589.7v6.8l4.4 1.6v17.5l13.1 5v-17.5l4.4 1.6v-6.8l-4.4-1.6-13.1-5z" class="a"/></g>
+          </svg>
+          <h2 class="footer-nav-title">Portfolio</h2>
+        </a>
+      </div>
+      <div class="footer-item footer-on-demand">
+        <a href="#on-demand">
+          <svg class="nav-icon nav-on-demand" xmlns="http://www.w3.org/2000/svg" width="auto" height="26" viewBox="0 0 18.737562 23.924631">
+            <g transform="translate(-108.0814,-654.97397)">
+              <path d="m 111.25112,670.9243 c 1.2383,0.93033 2.4766,1.86064 3.71489,2.79098 3.14643,-4.18804 6.29287,-8.37607 9.4393,-12.56411 -1.23831,-0.93031 -2.47659,-1.86066 -3.7149,-2.79097 -3.14643,4.18803 -6.29286,8.37607 -9.43929,12.5641 z m 9.85004,-13.11083 c 1.2383,0.93032 2.4766,1.86065 3.7149,2.79097 0.63178,-0.8947 1.37839,-1.7199 1.92794,-2.66456 0.30329,-0.75996 -0.26148,-1.44876 -0.88294,-1.8144 -0.68794,-0.42477 -1.26397,-1.2385 -2.15523,-1.13839 -0.87643,0.14663 -1.20223,1.07939 -1.73844,1.6734 -0.28875,0.38433 -0.57749,0.76865 -0.86623,1.15298 z m -10.19752,13.70509 c -0.93567,2.33655 -1.90758,4.6621 -2.82065,7.00551 -0.0309,0.43862 0.54639,0.46163 0.74228,0.1511 1.88898,-1.48685 3.77796,-2.9737 5.66694,-4.46055 -1.1962,-0.89868 -2.39238,-1.79737 -3.58857,-2.69606 z m 1.75803,-0.99292 c 2.69267,-3.56853 5.35754,-7.16214 8.06756,-10.71503 0.36312,-0.27979 0.7647,0.31415 0.404,0.57676 -2.66841,3.53607 -5.30874,7.09749 -7.99466,10.61774 -0.3041,0.23816 -0.71632,-0.17651 -0.4769,-0.47947 z m 1.74813,1.31336 c 2.69267,-3.56853 5.35755,-7.16214 8.06757,-10.71503 0.36313,-0.27978 0.76486,0.31418 0.4041,0.57684 -2.66841,3.53607 -5.30873,7.0975 -7.99465,10.61775 -0.30415,0.23816 -0.71643,-0.17667 -0.47702,-0.47956 z" />
+            </g>
+          </svg>
+          <h2 class="footer-nav-title">On Demand</h2>
+        </a>      
+      </div>
+      <div class="footer-item footer-contact">
+        <a href="#contact">
+          <svg class="nav-icon nav-contact" xmlns="http://www.w3.org/2000/svg" width="auto" height="26" viewBox="0 0 17.914581 22.07757">
+            <g transform="translate(-95.758629,-627.21913)">
+              <g>
+                <path d="m 104.71241,644.28651 a 2.5050105,2.5050227 0 0 0 -2.50162,2.5051 2.5050105,2.5050227 0 0 0 2.50508,2.50509 2.5050105,2.5050227 0 0 0 2.50479,-2.50509 2.5050105,2.5050227 0 0 0 -2.50479,-2.5051 2.5050105,2.5050227 0 0 0 -0.003,0 z"/>
+                <path d="m 111.16482,638.59766 a 2.5050105,2.5050227 0 0 0 -2.50164,2.5048 2.5050105,2.5050227 0 0 0 2.50508,2.5051 2.5050105,2.5050227 0 0 0 2.5048,-2.5051 2.5050105,2.5050227 0 0 0 -2.5048,-2.5048 2.5050105,2.5050227 0 0 0 -0.003,0 z"/>
+                <path d="M 33.841797 43.003906 A 9.4677566 9.4678028 0 0 0 24.386719 52.470703 A 9.4677566 9.4678028 0 0 0 33.855469 61.939453 A 9.4677566 9.4678028 0 0 0 43.322266 52.470703 A 9.4677566 9.4678028 0 0 0 33.855469 43.003906 A 9.4677566 9.4678028 0 0 0 33.84375 43.003906 L 33.841797 43.003906 z M 33.851562 48.564453 C 36.041345 48.564453 37.757812 50.282836 37.757812 52.472656 C 37.757812 54.662401 36.041345 56.378906 33.851562 56.378906 C 31.661818 56.378906 29.947266 54.662401 29.947266 52.472656 C 29.947266 50.282873 31.661818 48.564453 33.851562 48.564453 z " transform="matrix(0.26458332,0,0,0.26458332,95.758629,627.21913)" />
+                <path d="m 98.260539,638.59711 a 2.5050105,2.5050227 0 0 0 -2.50162,2.50509 2.5050105,2.5050227 0 0 0 2.50508,2.5051 2.5050105,2.5050227 0 0 0 2.504791,-2.5051 2.5050105,2.5050227 0 0 0 -2.504791,-2.50509 2.5050105,2.5050227 0 0 0 -0.003,0 z"/>
+                <path d="M 58.228516 21.503906 A 9.4677566 9.4678028 0 0 0 48.773438 30.970703 A 9.4677566 9.4678028 0 0 0 58.240234 40.4375 A 9.4677566 9.4678028 0 0 0 67.708984 30.970703 A 9.4677566 9.4678028 0 0 0 58.240234 21.503906 A 9.4677566 9.4678028 0 0 0 58.228516 21.503906 z M 58.238281 27.064453 C 60.428064 27.064453 62.142578 28.782836 62.142578 30.972656 C 62.142578 33.162401 60.428064 34.876953 58.238281 34.876953 C 56.048498 34.876953 54.333984 33.162401 54.333984 30.972656 C 54.333984 28.782873 56.048498 27.064453 58.238281 27.064453 z " transform="matrix(0.26458332,0,0,0.26458332,95.758629,627.21913)" />
+                <path d="m 104.71269,632.90855 a 2.5050105,2.5050227 0 0 0 -2.50163,2.5048 2.5050105,2.5050227 0 0 0 2.50509,2.5051 2.5050105,2.5050227 0 0 0 2.50508,-2.5051 2.5050105,2.5050227 0 0 0 -2.50508,-2.5048 2.5050105,2.5050227 0 0 0 -0.003,0 z"/>
+                <path d="m 98.260709,632.90855 a 2.5050105,2.5050227 0 0 0 -2.50164,2.5048 2.5050105,2.5050227 0 0 0 2.50508,2.5051 2.5050105,2.5050227 0 0 0 2.505091,-2.5051 2.5050105,2.5050227 0 0 0 -2.505091,-2.5048 2.5050105,2.5050227 0 0 0 -0.003,0 z" />
+                <path d="m 111.16424,627.21913 a 2.5050105,2.5050227 0 0 0 -2.50135,2.50508 2.5050105,2.5050227 0 0 0 2.5048,2.50509 2.5050105,2.5050227 0 0 0 2.50508,-2.50509 2.5050105,2.5050227 0 0 0 -2.50508,-2.50508 2.5050105,2.5050227 0 0 0 -0.003,0 z" />
+                <path d="m 104.71254,627.21913 a 2.5050105,2.5050227 0 0 0 -2.50164,2.50508 2.5050105,2.5050227 0 0 0 2.5048,2.50509 2.5050105,2.5050227 0 0 0 2.50509,-2.50509 2.5050105,2.5050227 0 0 0 -2.50509,-2.50508 2.5050105,2.5050227 0 0 0 -0.003,0 z" />
+                <path d="M 9.4550781 0 A 9.4677566 9.4678028 0 0 0 0 9.46875 A 9.4677566 9.4678028 0 0 0 9.46875 18.935547 A 9.4677566 9.4678028 0 0 0 18.935547 9.46875 A 9.4677566 9.4678028 0 0 0 9.46875 0 A 9.4677566 9.4678028 0 0 0 9.4570312 0 L 9.4550781 0 z M 9.46875 5.5605469 C 11.658608 5.5605469 13.373047 7.2809203 13.373047 9.4707031 C 13.373047 11.660486 11.658608 13.375 9.46875 13.375 C 7.279005 13.375 5.5644531 11.660486 5.5644531 9.4707031 C 5.5644531 7.2809581 7.279005 5.5605469 9.46875 5.5605469 z " transform="matrix(0.26458332,0,0,0.26458332,95.758629,627.21913)" />
+              </g>
+            </g>
+          </svg>
+          <h2 class="footer-nav-title">Contact</h2>
+        </a>      
+      </div>
+      <div class="footer-item footer-about">
+        <a href="#about">
+          <svg class="nav-icon nav-about" xmlns="http://www.w3.org/2000/svg" width="auto" height="26" viewBox="0 0 20.108316 19.82313">
+            <g transform="translate(-106.83923,-637.95178)">
+              <circle r="6.2668934" cy="644.21869" cx="116.8933"/>
+              <path d="m 116.89343,651.27924 a 10.054165,6.4956684 0 0 0 -10.0542,6.49567 h 20.10831 a 10.054165,6.4956684 0 0 0 -10.05411,-6.49567 z"/>
+            </g>
+          </svg>
+          <h2 class="footer-nav-title">About</h2>
+        </a>      
+      </div>
+      <!-- <div class="footer-buttons">
+        <div class="social-buttons">
+          <a href="#">F</a>
+          <a href="#">I</a>
+        </div>
+        <div>
+          <button class="primary-button" id="shop-now">
+            <h3>Shop now</h3>
+          </button>
+        </div>
+        <div>
+          <button class="secondary-button" id="on-demand">
+            <h3>On demand</h3>
+          </button>
+        </div>
+      </div> -->
+    </footer>
+
+    <section class="section portfolio" id="portfolio">
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolore tempore aliquam, eveniet asperiores sunt cumque quos velit ea voluptatum.</p> -->
+      <div class="section-header">
+        <h1 class="section-title">Por<br>tfo<br>lio</h1>
+      </div>
+      
+      <div class="section-content">
+        <div class="portfolio-item">
+          <div class="item-header">
+            <h2 class="item-title">I beg to differ</h2>
+          </div>
+          <div class="item-content">
+            <p class="item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa quisquam eius aperiam soluta ratione hic, quae, obcaecati veritatis, explicabo distinctio esse recusandae. Possimus minima, similique facilis ducimus dignissimos deleniti. Fuga, ducimus. Ratione quam quos ex qui necessitatibus, veniam fugit harum, dolorem dignissimos iste eaque esse, excepturi sapiente enim eligendi reiciendis?</p>
+            <img src="assets/begtodif/full_rectangle_landscape.png" alt="" class="item-design">
+            <img src="assets/begtodif/begtodif sitting hoodie.png" alt="" class="mockup-1">
+            <img src="assets/begtodif/betodif hand white bg.png" alt="" class="mockup-2">
+            <img src="assets/begtodif/begtodif businesswoman.png" alt="" class="mockup-3">
+          </div>
+        </div>  
+
+        <div class="portfolio-item">
+          <div class="item-header">
+            <h2 class="item-title">Lunatic</h2>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="item-header">
+            <h2 class="item-title">What the fox?</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section on-demand" id="on-demand">
+      <div class="section-header">
+        <h1 class="section-title">On_<br>Dem<br>and</h1>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-header">
+        <h1 class="section-title">Con<br>tac<br>_t_</h1>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-header">
+        <h1 class="section-title">Abo<br>ut_<br>me</h1>
+      </div>
+    </section>
+
   </main>
   
-  <footer>
-  </footer>
+  
   
 </body>
 </html>
