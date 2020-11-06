@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bright-yellow: #FFA953;
+  --mid-yellow: #E3924C;
+  --dark-blue: #113F51;
+  --begtodif-red: #D40000;
+  --hover-black: rgba(0,0,0,.7);
+  --fools-cyan: #3dc1c1;
+  --fools-purple: #752d75;
+  --fox-green: #00be2c;
+  --luna-light: #019ac1;
+  --luna-dark: #162d50;
+}
+/* 
+body {
+  scroll-behavior: smooth;
+} */
+
+/*********** TYPOGRAPHY STYLES ***********/
+
+h1 {
+  font-family: 'Allan', cursive;
+}
+
+h2, li {
+  font-family: 'Squada One', cursive;
+  font-weight: 400;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  line-height: .8;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+/************ GENERIC STYLES ************/
+
+.title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.section {
+  padding: 0 1rem 18rem;
+  width: 100%;
+  background-blend-mode: multiply;
+}
+
+.portfolio-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  margin-bottom: 12rem;
+}
+
+.design-content {
+  min-height: 200vh;
+}
+
+.design-name {
+  position: sticky;
+  top: 3rem;
+  margin-bottom: 11rem;
+}
+
+.design {
+  width: 10rem;
+  position: sticky;
+  top: 10rem;
+  display: block;
+  margin: 0 auto 5rem;
+}
+
+.design-details {
+  text-align: center;
+  position: sticky;
+  top: 85vh;
+  display: block;
+}
+
+.design-details-item {
+  list-style-type: none;
+  line-height: 1.4;
+}
+
+/************ HERO SECTION STYLES ************/
+
+.hero {
+  background: var(--bright-yellow) url('../assets/blank-shirt-png.png') fixed no-repeat center;
+  background-size: contain;
+}
+
+.hero h1, .hero h2, .hero p, .hero span {
+  color: var(--dark-blue);
+}
+
+.hero span {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 30vh 0 0;
+  animation: scrollUp 1s alternate .8s infinite ease-out;
+}
+
+@keyframes scrollUp {
+  100% {transform: translateY(-2.5rem);}
+}
+
+.hero .scroll {
+  padding: 1vh 0 calc(65vh - 5rem);
+}
+
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.hero-logo { 
+  fill: var(--dark-blue);
+  position: sticky;
+  top: 1rem;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero .girl,
+.hero .boy {
+  position: sticky;
+}
+
+.hero .girl {
+  top: 6rem;
+  padding: 20vh 0 1.5rem;
+}
+
+.hero .boy {
+  top: 13rem;
+  padding: 40vh 0 0;
+}
+
+
+/************ BEG TO DIFFER STYLES ************/
+
+.begtodif-bg {
+  background: #D40000 url('../assets/blank-shirt-png.png') fixed no-repeat center;
+  background-size: contain;
+}
+
+.begtodif {
+  color: white;
+}
+
+.design-details .begtodif:hover,
+.design-details .begtodif:focus {
+  color: var(--hover-black);
+  cursor: pointer;
+}
+
+.begtodif-logo {
+  fill: white;
+}
+
+/************ WHAT THE FOX STYLES ************/
+
+.fox-bg {
+  background: white url('../assets/blank-shirt-png.png') fixed no-repeat center;
+  background-size: contain;
+}
+
+.fox {
+  color: var(--fox-green);
+}
+
+.design-details .fox:hover,
+.design-details .fox:focus {
+  color: var(--hover-black);
+  cursor: pointer;
+}
+
+.fox-logo {
+  fill: var(--fox-green);
+}
+
+/************ LUNATIC STYLES ************/
+
+.luna-bg {
+  background: var(--luna-dark) url('../assets/blank-shirt-png.png') fixed no-repeat center;
+  background-size: contain;
+}
+
+.luna {
+  color: var(--luna-light);
+}
+
+.design-details .luna:hover,
+.design-details .luna:focus {
+  color: white;
+  cursor: pointer;
+}
+
+.luna-logo {
+  fill: var(--luna-light);
+}
+
+/************ FOOLS STYLES ************/
+
+.fools-bg {
+  background: white url('../assets/blank-shirt-png.png') fixed no-repeat center;
+  background-size: contain;
+}
+
+.fools {
+  color: var(--fools-purple);
+}
+
+.design-details .fools:hover,
+.design-details .fools:focus {
+  color: var(--fools-cyan);
+  cursor: pointer;
+}
+
+.fools-logo {
+  fill: var(--fools-purple);
+}
