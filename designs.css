@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -65,6 +65,7 @@ p {
 
 .design-content {
   min-height: 200vh;
+  position: relative;
 }
 
 .design-name {
@@ -74,23 +75,93 @@ p {
 }
 
 .design {
-  width: 10rem;
+  width: 40vw;
   position: sticky;
-  top: 10rem;
+  top: 32vh;
   display: block;
   margin: 0 auto 5rem;
+  transform: scale(1);
+  transform-origin: top;
+  transition: transform .4s ease-out;
+}
+
+.design:hover,
+.design:focus {
+  transform: scale(1.4);
 }
 
 .design-details {
   text-align: center;
   position: sticky;
   top: 85vh;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .design-details-item {
   list-style-type: none;
   line-height: 1.4;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.card {
+  color: white;
+  background-color: var(--hover-black);
+  position: absolute;
+  top: -75vh;
+  left: 1em;
+  right: 1em;
+  bottom: 13vh;
+  text-align: left;
+  padding: 1em;
+  border-radius: .25rem;
+  transform: scale(0, 1);
+  transform-origin: bottom;
+  transition: transform .3s ease-in-out;
+}
+
+.card-title {
+  font-size: 2rem;
+  padding: 1em 0 2em;
+  pointer-events: none;
+}
+
+.card-text {
+  font-size: .8rem;
+  line-height: 1.5em;
+  pointer-events: none;
+}
+
+.card-story::before,
+.card-design::before,
+.card-look::before {
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: 1.1em solid var(--hover-black);
+  border-left: .8em solid transparent;
+  border-right: .8em solid transparent;
+  bottom: -1.05em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.design-details li:hover {
+  color: var(--hover-black);
+  cursor: pointer;
+}
+
+li:hover .card {
+  transform: scale(1, 1);
 }
 
 /************ HERO SECTION STYLES ************/
@@ -117,7 +188,7 @@ p {
 }
 
 .hero .scroll {
-  padding: 1vh 0 calc(65vh - 5rem);
+  padding: 0 0 calc(60vh - 5rem);
 }
 
 .hero-bottom {
@@ -163,12 +234,6 @@ p {
 
 .begtodif {
   color: white;
-}
-
-.design-details .begtodif:hover,
-.design-details .begtodif:focus {
-  color: var(--hover-black);
-  cursor: pointer;
 }
 
 .begtodif-logo {
