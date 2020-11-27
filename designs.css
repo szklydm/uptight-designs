@@ -60,7 +60,7 @@ p {
 .section {
   padding: 0 1em 20rem;
   width: 100%;
-  /* max-width: 900px; */
+  min-height: 100vh;
   background-blend-mode: multiply;
 }
 
@@ -466,6 +466,11 @@ li:hover .card {
   color: white;
 }
 
+#begtodif .cta-primary-cont:hover::after,
+#begtodif .cta-sec-cont:hover::after {
+  background-color: black;
+}
+
 /************ WHAT THE FOX STYLES ************/
 
 .fox-bg {
@@ -504,6 +509,38 @@ li:hover .card {
   color: var(--fox-green);
 }
 
+.fox-port-2 {
+  grid-row: 5 / 9;
+}
+
+.fox-land-2 {
+  grid-row: -1 / -5;
+}
+
+#fox .look-port-1 {
+  grid-column: -1 / -4;
+  grid-row: 1 / 7;
+}
+
+#fox .look-port-2 {
+  grid-column: 1 / 4;
+  grid-row: 4 / 9;
+}
+
+#fox .look-land-1 {
+  grid-column: 3 / 5;
+  grid-row: 6 / 9;
+}
+
+#fox .look-land-2 {
+  grid-column: 1 / 4;
+  grid-row: -1 / -5;
+}
+
+#fox .look-port-3 {
+  grid-column: -1 / -4;
+}
+
 /************ LUNATIC STYLES ************/
 
 .luna-bg {
@@ -529,6 +566,11 @@ li:hover .card {
   background-color: var(--luna-light);
 }
 
+.cta-primary-cont:hover::after,
+.cta-sec-cont:hover::after {
+  background-color: white;
+}
+
 #luna .cta-cont {
   border: solid var(--luna-light) 3px;
 }
@@ -541,6 +583,35 @@ li:hover .card {
 #luna .cta-primary-cont:focus .cta-primary {
   color: var(--luna-light);
 }
+
+#luna .design-port-1 {
+  grid-column: -1 / -2;
+}
+
+#luna .design-port-2 {
+  grid-column: -1 / -4;
+  grid-row: -1 / -7;
+}
+
+#luna .design-port-4 {
+  grid-row: -1 / -5;
+}
+
+#luna .design-land-1 {
+  grid-column: 1 / -2;
+  grid-row: 4 / 7;
+}
+
+#luna .design-land-2 {
+  grid-column: 1 / 2;
+  grid-row: 7 / 9;
+}
+
+#luna .design-port-3 {
+  grid-column: 2 / 3;
+  grid-row: 7 / 9;
+}
+
 
 /************ FOOLS STYLES ************/
 
@@ -578,4 +649,25 @@ li:hover .card {
 #fools .cta-primary-cont:hover .cta-primary,
 #fools .cta-primary-cont:focus .cta-primary {
   color: var(--fools-purple);
+}
+
+/*************** ACTIONS ***************/
+
+.actions {
+  background-color: var(--dark-blue);
+  color: var(--bright-yellow);
+}
+
+.actions-logo {
+  fill: var(--bright-yellow);
+}
+
+
+
+/*************** LAPTOP SCREENS ***************/
+
+@media (min-width: 800px) {
+  .section {
+    padding: 0 15vw 20rem;
+  }
 }
