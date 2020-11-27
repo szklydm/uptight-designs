@@ -107,13 +107,11 @@ p {
   position: sticky;
   top: calc(85vh + 6px);
   width: max-content;
-  border: solid white 3px;
   margin-top: 10vh;
 }
 
 .cta-primary-cont {
   z-index: 10;
-  background-color: white;
   margin-left: calc(-1em - 3px);
   padding: .5em 1.2em .5em .75em;
   border-radius: 0px 100px 100px 0px;
@@ -202,11 +200,6 @@ p {
   cursor: pointer;
 }
 
-.cta-primary-cont:hover .cta {
-  color: white;
-  transition: color .2s ease-out;
-}
-
 .cta-primary-cont:hover::before,
 .cta-primary-cont:hover::after,
 .cta-sec-cont:hover::before,
@@ -214,8 +207,6 @@ p {
   transform: scale(1, 1);
   transition: transform .2s ease-out;
 }
-
-
 
 .cta-secondary {
   background-color: transparent;
@@ -462,6 +453,19 @@ li:hover .card {
   color: var(--begtodif-red);
 }
 
+#begtodif .cta-primary-cont {
+  background-color: white;
+}
+
+#begtodif .cta-cont {
+  border: solid white 3px;
+}
+
+#begtodif .cta-primary-cont:hover .cta-primary,
+#begtodif .cta-primary-cont:focus .cta-primary {
+  color: white;
+}
+
 /************ WHAT THE FOX STYLES ************/
 
 .fox-bg {
@@ -481,6 +485,23 @@ li:hover .card {
 
 .fox-logo {
   fill: var(--fox-green);
+}
+
+#fox .cta-primary-cont {
+  background-color: var(--fox-green);
+}
+
+#fox .cta-cont {
+  border: solid var(--fox-green) 3px;
+}
+
+#fox .cta-primary {
+  color: white;
+}
+
+#fox .cta-primary-cont:hover .cta-primary,
+#fox .cta-primary-cont:focus .cta-primary {
+  color: var(--fox-green);
 }
 
 /************ LUNATIC STYLES ************/
@@ -504,6 +525,23 @@ li:hover .card {
   fill: var(--luna-light);
 }
 
+#luna .cta-primary-cont {
+  background-color: var(--luna-light);
+}
+
+#luna .cta-cont {
+  border: solid var(--luna-light) 3px;
+}
+
+#luna .cta-primary {
+  color: var(--luna-dark);
+}
+
+#luna .cta-primary-cont:hover .cta-primary,
+#luna .cta-primary-cont:focus .cta-primary {
+  color: var(--luna-light);
+}
+
 /************ FOOLS STYLES ************/
 
 .fools-bg {
@@ -523,4 +561,21 @@ li:hover .card {
 
 .fools-logo {
   fill: var(--fools-purple);
+}
+
+#fools .cta-primary-cont {
+  background-color: var(--fools-purple);
+}
+
+#fools .cta-cont {
+  border: solid var(--fools-purple) 3px;
+}
+
+#fools .cta-primary {
+  color: white;
+}
+
+#fools .cta-primary-cont:hover .cta-primary,
+#fools .cta-primary-cont:focus .cta-primary {
+  color: var(--fools-purple);
 }
