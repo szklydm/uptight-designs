@@ -31,7 +31,7 @@ h1 {
   font-family: 'Allan', cursive;
 }
 
-h2, li {
+h2, li, a {
   font-family: 'Squada One', cursive;
   font-weight: 400;
   font-size: 1.125rem;
@@ -103,7 +103,10 @@ p {
   box-shadow: 0px 15px 20px -10px rgba(0,0,0,.3);
 }
 
-.cta-cont {
+
+/*********** ALTERNATE CTA BUTTONS ***********/
+/* BUTTONS ON SIDE OF THE BROWSER WINDOW, PSEUDO ELEMENTS USED FOR ADVANCED HOVER EFFECT */
+/* .cta-cont {
   position: sticky;
   top: calc(85vh + 6px);
   width: max-content;
@@ -166,9 +169,6 @@ p {
   left: 0;
   right: 15%;
   clip-path: polygon(0 0, 100% 0%, 15% 100%, 0% 100%);
-  /* top: 50%; */
-  /* right: -10%; */
-  /* clip-path: polygon(0 0, 0% 100%, 100% 0); */
 }
 
 .cta-sec-cont::before {
@@ -210,7 +210,9 @@ p {
 
 .cta-secondary {
   background-color: transparent;
-}
+} */
+
+/************ END OF ALTERNATE CTA BUTTONS ************/
 
 .design-details {
   display: flex;
@@ -222,7 +224,7 @@ p {
   z-index: 1;
   top: 85vh;
   margin: 0 auto;
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
 }
 
 .design-details-item {
@@ -371,6 +373,34 @@ li:hover .card {
   cursor: auto;
 }
 
+/********************** CTA BUTTONS **********************/
+
+.cta-cont {
+  max-width: 10rem;
+  width: 40%;
+  height: 2.5em;
+  margin: 0 auto 2rem;
+  border-radius: 100px;
+  display: grid;
+  place-items: center;
+  transition: all .15s ease-out;
+}
+
+.cta {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-cont:hover,
+.cta-cont:focus {
+  background-color: black;
+  cursor: pointer;
+  box-shadow: 0 20px 10px -15px rgba(0,0,0,.3);
+  transform: translateY(-.2em);
+  transition: all .25s ease-in;
+}
+
 
 /************ HERO SECTION STYLES ************/
 
@@ -446,14 +476,49 @@ li:hover .card {
 
 .begtodif-logo {
   fill: white;
-  width: 2.5rem;
-}
-
-.cta-begtodif {
-  color: var(--begtodif-red);
 }
 
 #begtodif .cta-primary-cont {
+  background-color: white;
+}
+
+#begtodif .cta-cont:hover,
+#begtodif .cta-cont:focus {
+  background-color: black;
+}
+
+#begtodif .cta-primary-cont .cta {
+  color: var(--begtodif-red);
+}
+
+#begtodif .cta-primary-cont:hover .cta,
+#begtodif .cta-primary-cont:focus .cta {
+  color: white;
+}
+
+#begtodif .cta-sec-cont {
+  border: 3px solid white;
+}
+
+#begtodif .cta-sec-cont:hover,
+#begtodif .cta-sec-cont:focus {
+  border: 3px solid black;
+}
+
+#begtodif .cta-secondary {
+  color: white;
+}
+
+#begtodif .cta-sec-cont:hover .cta-secondary {
+  color: white;
+}
+
+/* #begtodif .cta-sec-cont:hover, 
+#begtodif .cta-sec-cont:focus {
+  border: black;
+} */
+
+/* #begtodif .cta-primary-cont {
   background-color: white;
 }
 
@@ -469,7 +534,7 @@ li:hover .card {
 #begtodif .cta-primary-cont:hover::after,
 #begtodif .cta-sec-cont:hover::after {
   background-color: black;
-}
+} */
 
 /************ WHAT THE FOX STYLES ************/
 
@@ -492,22 +557,7 @@ li:hover .card {
   fill: var(--fox-green);
 }
 
-#fox .cta-primary-cont {
-  background-color: var(--fox-green);
-}
-
-#fox .cta-cont {
-  border: solid var(--fox-green) 3px;
-}
-
-#fox .cta-primary {
-  color: white;
-}
-
-#fox .cta-primary-cont:hover .cta-primary,
-#fox .cta-primary-cont:focus .cta-primary {
-  color: var(--fox-green);
-}
+/* CARD GRID STUFF */
 
 .fox-port-2 {
   grid-row: 5 / 9;
@@ -541,6 +591,39 @@ li:hover .card {
   grid-column: -1 / -4;
 }
 
+/* BUTTON STUFF */
+
+#fox .cta-cont:hover,
+#fox .cta-cont:focus {
+  background-color: black;
+}
+
+#fox .cta-primary-cont {
+  background-color: var(--fox-green);
+}
+
+#fox .cta-primary {
+  color: white;
+}
+
+#fox .cta-sec-cont {
+  border: 3px solid var(--fox-green);
+}
+
+#fox .cta-sec-cont:hover,
+#fox .cta-sec-cont:focus {
+  border: 3px solid black;
+}
+
+#fox .cta-secondary {
+  color: var(--fox-green);
+}
+
+#fox .cta-sec-cont:hover .cta-secondary,
+#fox .cta-sec-cont:focus .cta-secondary {
+  color: white;
+}
+
 /************ LUNATIC STYLES ************/
 
 .luna-bg {
@@ -562,27 +645,7 @@ li:hover .card {
   fill: var(--luna-light);
 }
 
-#luna .cta-primary-cont {
-  background-color: var(--luna-light);
-}
-
-.cta-primary-cont:hover::after,
-.cta-sec-cont:hover::after {
-  background-color: white;
-}
-
-#luna .cta-cont {
-  border: solid var(--luna-light) 3px;
-}
-
-#luna .cta-primary {
-  color: var(--luna-dark);
-}
-
-#luna .cta-primary-cont:hover .cta-primary,
-#luna .cta-primary-cont:focus .cta-primary {
-  color: var(--luna-light);
-}
+/* CARD GRID STUFF */
 
 #luna .design-port-1 {
   grid-column: -1 / -2;
@@ -612,6 +675,38 @@ li:hover .card {
   grid-row: 7 / 9;
 }
 
+/* BUTTONS STUFF */
+
+#luna .cta-cont:hover,
+#luna .cta-cont:focus {
+  background-color: white;
+}
+
+#luna .cta-primary-cont {
+  background-color: var(--luna-light);
+}
+
+#luna .cta-primary {
+  color: var(--luna-dark);
+}
+
+#luna .cta-sec-cont {
+  border: 3px solid var(--luna-light);
+}
+
+#luna .cta-sec-cont:hover,
+#luna .cta-sec-cont:focus {
+  border: 3px solid white;
+}
+
+#luna .cta-secondary {
+  color: var(--luna-light);
+}
+
+#luna .cta-sec-cont:hover .cta-secondary,
+#luna .cta-sec-cont:focus .cta-secondary {
+  color: var(--luna-dark);
+}
 
 /************ FOOLS STYLES ************/
 
@@ -634,40 +729,37 @@ li:hover .card {
   fill: var(--fools-purple);
 }
 
-#fools .cta-primary-cont {
-  background-color: var(--fools-purple);
+/* CARD GRID STUFF */
+
+/* BUTTONS STUFF */
+
+#fools .cta-cont:hover,
+#fools .cta-cont:focus {
+  background-color: var(--fools-cyan);
 }
 
-#fools .cta-cont {
-  border: solid var(--fools-purple) 3px;
+#fools .cta-primary-cont {
+  background-color: var(--fools-purple);
 }
 
 #fools .cta-primary {
   color: white;
 }
 
-#fools .cta-primary-cont:hover .cta-primary,
-#fools .cta-primary-cont:focus .cta-primary {
+#fools .cta-cont:hover .cta,
+#fools .cta-cont:focus .cta {
   color: var(--fools-purple);
 }
 
-/*************** ACTIONS ***************/
-
-.actions {
-  background-color: var(--dark-blue);
-  color: var(--bright-yellow);
+#fools .cta-sec-cont {
+  border: 3px solid var(--fools-purple);
 }
 
-.actions-logo {
-  fill: var(--bright-yellow);
+#fools .cta-sec-cont:hover,
+#fools .cta-sec-cont:focus {
+  border: 3px solid var(--fools-cyan);
 }
 
-
-
-/*************** LAPTOP SCREENS ***************/
-
-@media (min-width: 800px) {
-  .section {
-    padding: 0 15vw 20rem;
-  }
+#fools .cta-secondary {
+  color: var(--fools-purple);
 }
